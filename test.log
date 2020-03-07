@@ -1,0 +1,53 @@
+2020-03-07 11:36:03 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2020-03-07 11:36:03 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2020-03-07 11:36:03 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {}->http://localhost:8080][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2020-03-07 11:36:03 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {}->http://localhost:8080][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-03-07 11:36:03 DEBUG MainClientExec:235 - Opening connection {}->http://localhost:8080
+2020-03-07 11:36:03 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to localhost/127.0.0.1:8080
+2020-03-07 11:36:03 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 127.0.0.1:56107<->127.0.0.1:8080
+2020-03-07 11:36:03 DEBUG MainClientExec:256 - Executing request POST /test1 HTTP/1.1
+2020-03-07 11:36:03 DEBUG MainClientExec:261 - Target auth state: UNCHALLENGED
+2020-03-07 11:36:03 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2020-03-07 11:36:03 DEBUG headers:133 - http-outgoing-0 >> POST /test1 HTTP/1.1
+2020-03-07 11:36:03 DEBUG headers:136 - http-outgoing-0 >> content-type: json/text
+2020-03-07 11:36:03 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 24
+2020-03-07 11:36:03 DEBUG headers:136 - http-outgoing-0 >> Host: localhost:8080
+2020-03-07 11:36:03 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2020-03-07 11:36:03 DEBUG headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)
+2020-03-07 11:36:03 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 >> "POST /test1 HTTP/1.1[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 >> "content-type: json/text[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 24[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 >> "Host: localhost:8080[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_171)[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:87 - http-outgoing-0 >> "param=%E4%B8%AD%E5%9B%BD"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 << "Content-Type: text/plain;charset=UTF-8[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 7[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 << "Date: Sat, 07 Mar 2020 03:36:03 GMT[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 << "Keep-Alive: timeout=60[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2020-03-07 11:36:03 DEBUG wire:87 - http-outgoing-0 << "success"
+2020-03-07 11:36:03 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 200 
+2020-03-07 11:36:03 DEBUG headers:125 - http-outgoing-0 << Content-Type: text/plain;charset=UTF-8
+2020-03-07 11:36:03 DEBUG headers:125 - http-outgoing-0 << Content-Length: 7
+2020-03-07 11:36:03 DEBUG headers:125 - http-outgoing-0 << Date: Sat, 07 Mar 2020 03:36:03 GMT
+2020-03-07 11:36:03 DEBUG headers:125 - http-outgoing-0 << Keep-Alive: timeout=60
+2020-03-07 11:36:03 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2020-03-07 11:36:03 DEBUG MainClientExec:285 - Connection can be kept alive for 60000 MILLISECONDS
+2020-03-07 11:36:03 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {}->http://localhost:8080] can be kept alive for 60.0 seconds
+2020-03-07 11:36:03 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2020-03-07 11:36:03 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {}->http://localhost:8080][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2020-03-07 11:36:03 INFO  HttpUtils:113 - Http Post : url-http://localhost:8080/test1 header-{content-type=json/text} params-{param=中国}
+2020-03-07 11:36:03 INFO  HttpUtils:114 - response code-200,body-success
+2020-03-07 11:36:03 DEBUG PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-03-07 11:36:03 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2020-03-07 11:36:03 DEBUG PoolingHttpClientConnectionManager:414 - Connection manager shut down
+2020-03-07 11:40:22 INFO  HttpUtils:113 - Http Post : url-http://localhost:8080/test1 header-{content-type=json/text} params-{param=中国}
+2020-03-07 11:40:22 INFO  HttpUtils:114 - response code-200,body-success
+2020-03-07 11:41:20 INFO  HttpUtils:113 - Http Post : url-http://localhost:8080/test1 header-{content-type=json/text} params-{param=中国}
+2020-03-07 11:41:20 INFO  HttpUtils:114 - response code-404,body-{"timestamp":"2020-03-07T03:41:20.388+0000","status":404,"error":"Not Found","message":"No message available","path":"/test1"}
